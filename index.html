@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三山岛福寿螺识别与上报</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <header>
+    <h1>如果你在湖边看到粉红色的卵块</h1>
+    <p>那不是新奇植物。那是福寿螺的卵。</p >
+  </header>
+
+  <section id="identify">
+    <h2>一、10 秒分清福寿螺和田螺</h2>
+    <div class="compare">
+      <figure>
+        <!-- 先用灰色方块占位，后面换成真图 -->
+        <img src="fushouluo.jpg" alt="福寿螺">
+        <figcaption>福寿螺：黄褐色，尾短平，螺口大</figcaption>
+      </figure>
+      <figure>
+        <img src="tianluo.jpg" alt="田螺">
+        <figcaption>田螺：青褐色，尾长尖，螺口小</figcaption>
+      </figure>
+    </div>
+    <p class="mnemonic"><strong>一色二尾三卵四口</strong>：看壳色、看尾部、看卵块颜色、看螺口有没有黑边。</p >
+  </section>
+
+  <section id="quiz">
+    <h2>二、5 道题，测测你能不能认出来</h2>
+    <div id="quiz-box"></div>
+    <button id="quiz-next" hidden>下一题</button>
+    <p id="quiz-result" hidden></p >
+  </section>
+
+  <section id="map-section">
+    <h2>三、三山岛已知出现位置</h2>
+    <div id="map"></div>
+  </section>
+
+  <section id="action">
+    <h2>四、看到之后，下一步做什么</h2>
+    <div class="flow">
+      <div class="flow-step">
+        <span class="num">1</span>
+        <p><strong>不要徒手剥卵、不要扔进水里。</strong>卵块需脱水或压碎销毁，扔进水里反而会孵化。</p >
+      </div>
+      <div class="flow-step">
+        <span class="num">2</span>
+        <p><strong>拍照记录位置。</strong>拍下卵块和田螺/福寿螺本身，记下大概地点。</p >
+      </div>
+      <div class="flow-step">
+        <span class="num">3</span>
+        <p><strong>联系三山岛景区管理处或当地村委会。</strong>附上照片和位置。</p >
+      </div>
+    </div>
+    <p class="footnote">三山岛位于苏州市吴中区东山镇东南太湖中，属苏州市福寿螺重点监测区域。</p >
+  </section>
+
+  <footer>
+    <p>Built with Leaflet & vanilla JS. <a href=" ">Source on GitHub</a >.</p >
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
