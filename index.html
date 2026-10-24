@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>三山岛福寿螺识别与上报</title>
+  <title>三山岛福寿螺识别与上报 | Sanshan Island Apple Snail ID & Report</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
@@ -11,54 +11,80 @@
 
   <header>
     <h1>如果你在湖边看到粉红色的卵块</h1>
+    <p class="en">If you see pink egg masses by the lake</p >
     <p>那不是新奇植物。那是福寿螺的卵。</p >
+    <p class="en">That's not a novel plant. Those are Apple Snail eggs.</p >
   </header>
 
   <section id="identify">
     <h2>一、10 秒分清福寿螺和田螺</h2>
+    <p class="en-h2">Distinguish Apple Snails from Mud Snails in 10s</p >
     <div class="compare">
       <figure>
-        <!-- 先用灰色方块占位，后面换成真图 -->
         <img src="fushouluo.jpg" alt="福寿螺">
-        <figcaption>福寿螺：黄褐色，尾短平，螺口大</figcaption>
+        <figcaption>
+          福寿螺：黄褐色，尾短平，螺口大
+          <br><span class="en">Apple Snail: Yellow-brown, short tail, large opening</span>
+        </figcaption>
       </figure>
       <figure>
         <img src="tianluo.jpg" alt="田螺">
-        <figcaption>田螺：青褐色，尾长尖，螺口小</figcaption>
+        <figcaption>
+          田螺：青褐色，尾长尖，螺口小
+          <br><span class="en">Mud Snail: Green-brown, long pointed tail, small opening</span>
+        </figcaption>
       </figure>
     </div>
-    <p class="mnemonic"><strong>一色二尾三卵四口</strong>：看壳色、看尾部、看卵块颜色、看螺口有没有黑边。</p >
+    <p class="mnemonic">
+      <strong>一色二尾三卵四口</strong>：看壳色、看尾部、看卵块颜色、看螺口有没有黑边。
+      <br><span class="en">Rule of Thumb: Check shell color, tail shape, egg mass color, and the opening edge.</span>
+    </p >
   </section>
 
   <section id="quiz">
     <h2>二、5 道题，测测你能不能认出来</h2>
+    <p class="en-h2">5 Questions: Can you recognize them?</p >
     <div id="quiz-box"></div>
-    <button id="quiz-next" hidden>下一题</button>
+    <button id="quiz-next" hidden>下一题 / Next</button>
     <p id="quiz-result" hidden></p >
   </section>
 
   <section id="map-section">
     <h2>三、三山岛已知出现位置</h2>
+    <p class="en-h2">Known Sightings on Sanshan Island</p >
     <div id="map"></div>
   </section>
 
   <section id="action">
     <h2>四、看到之后，下一步做什么</h2>
+    <p class="en-h2">What to do next when you see one</p >
     <div class="flow">
       <div class="flow-step">
         <span class="num">1</span>
-        <p><strong>不要徒手剥卵、不要扔进水里。</strong>卵块需脱水或压碎销毁，扔进水里反而会孵化。</p >
+        <p>
+          <strong>不要徒手剥卵、不要扔进水里。</strong>卵块需脱水或压碎销毁，扔进水里反而会孵化。
+          <br><span class="en"><strong>Do not scrape by hand or throw into water.</strong> Egg masses must be desiccated or crushed; throwing them in water helps them hatch.</span>
+        </p >
       </div>
       <div class="flow-step">
         <span class="num">2</span>
-        <p><strong>拍照记录位置。</strong>拍下卵块和田螺/福寿螺本身，记下大概地点。</p >
+        <p>
+          <strong>拍照记录位置。</strong>拍下卵块和田螺/福寿螺本身，记下大概地点。
+          <br><span class="en"><strong>Take a photo and record the location.</strong> Capture the egg mass and the snail, note the approximate spot.</span>
+        </p >
       </div>
       <div class="flow-step">
         <span class="num">3</span>
-        <p><strong>联系三山岛景区管理处或当地村委会。</strong>附上照片和位置。</p >
+        <p>
+          <strong>联系三山岛景区管理处或当地村委会。</strong>附上照片和位置。
+          <br><span class="en"><strong>Contact Sanshan Island management or the local village committee.</strong> Attach photos and location.</span>
+        </p >
       </div>
     </div>
-    <p class="footnote">三山岛位于苏州市吴中区东山镇东南太湖中，属苏州市福寿螺重点监测区域。</p >
+    <p class="footnote">
+      三山岛位于苏州市吴中区东山镇东南太湖中，属苏州市福寿螺重点监测区域。
+      <br><span class="en">Sanshan Island is located in Taihu Lake (Suzhou), a key monitoring area for Apple Snails.</span>
+    </p >
   </section>
 
   <footer>

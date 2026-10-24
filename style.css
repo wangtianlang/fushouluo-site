@@ -91,3 +91,20 @@ figcaption { font-size: 14px; color: #666; margin-top: 8px; }
   margin-top: 30px;
 }
 img { max-width: 100%; height: auto; border-radius: 8px; }
+/* 中英双语排版辅助样式 */
+.en {
+  display: inline-block;
+  color: #666;
+  font-size: 13px;
+  margin-top: 4px;
+  line-height: 1.4;
+  font-family: Arial, sans-serif;
+}
+.en-h2 {
+  color: #666;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  padding-left: 14px;
+  font-family: Arial, sans-serif;
+}
